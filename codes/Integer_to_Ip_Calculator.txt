@@ -1,0 +1,10 @@
+integer_input = input("Enter an Integer: ")
+
+def integer_to_ip(integer):
+    a = (integer >> 24) & 255
+    b = (integer >> 16) & 255
+    c = (integer >> 8) & 255
+    d = integer & 255
+    return f"{a}.{b}.{c}.{d}"
+
+print(integer_to_ip(int(integer_input)))
