@@ -3,11 +3,11 @@ ________________________________________________________________________________
 
 #make sure to separate each octet with a period.
 
-ip = input("Enter IP Address: " )
+ip = input("Enter IP Address: ")
 
-def ip_to_integer(a,b,c,d)
-    return(a * (256 ** 3))+(b * (256 ** 2))+ (c(256 ** 1))+(d(256 ** 0))
+def ip_to_integer(a,b,c,d):
+    return(a*(256**3)) + (b*(256**2)) + (c*(256**1)) + (d*(256**0))
 
 a, b, c, d = map(int, ip.split('.'))
 
-print(fInteger {ip_to_integer(a,b,c,d)})
+print(f"Integer: {ip_to_integer(a,b,c,d)}")
